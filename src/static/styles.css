@@ -142,3 +142,80 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section */
+.participants-section {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participants-title {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participants-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.participant-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#6a8cff,#9ad0ff);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border: 2px solid rgba(255,255,255,0.6);
+  cursor: default;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.participant-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(20,20,60,0.18);
+}
+
+.participant-more {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #e8f0ff;
+  color: #1a237e;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1px solid #cfdfff;
+}
+
+.participant-empty {
+  color: #6b6b6b;
+  font-size: 13px;
+  background: #fafafa;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px dashed #eee;
+  display: inline-block;
+}
+
+/* Make the participants area sit nicely on small cards */
+.activity-card .participants-section {
+  background: linear-gradient(180deg, rgba(26,35,126,0.02), transparent);
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
