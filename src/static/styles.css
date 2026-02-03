@@ -160,46 +160,45 @@ footer {
 }
 
 .participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
 }
 
-.participant-badge {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: linear-gradient(135deg,#6a8cff,#9ad0ff);
-  color: white;
+.participant-item {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-weight: 600;
+  gap: 8px;
+  background: #f1f5ff;
+  padding: 6px 8px;
+  border-radius: 20px;
   font-size: 13px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-  border: 2px solid rgba(255,255,255,0.6);
-  cursor: default;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
-}
-
-.participant-badge:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(20,20,60,0.18);
-}
-
-.participant-more {
-  min-width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #e8f0ff;
   color: #1a237e;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid #e3e9ff;
+}
+
+.participant-name {
+  font-weight: 600;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #b00020;
   font-weight: 700;
-  font-size: 13px;
-  border: 1px solid #cfdfff;
+  cursor: pointer;
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.participant-remove:hover {
+  background: rgba(176,0,32,0.08);
 }
 
 .participant-empty {
